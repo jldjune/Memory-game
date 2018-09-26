@@ -1,0 +1,93 @@
+
+
+body{
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+	
+	
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	width: 90%;
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	
+	padding: 0;
+	margin: 5px auto;
+	text-align: center;
+	color: #455;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 1rem;
+}
+#difficulty{
+	font-size: 1.25rem;
+	padding: 5px 10px;
+	margin: 0 0 0 35px;
+}
+button{
+	background-color: #576;
+    color: #FFF;
+    width: 150px;
+    height: 40px;
+	font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 3px;
+	padding: 5px;
+	margin: 10px 60px;
+}
+#msg-box{
+	width: 600px;
+	margin-left: 130px;
+	font-size: 1.25rem;
+	font-weight: 600;
+	display: inline-block;
+}
+#container{
+	background-color: #EEE;
+	height: 100vh;
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 10px;
+}
+#app{
+	margin: 0 auto;
+	border: 1px solid #AAA;
+	background-color: #FFF;
+	border-radius: 3px;
+	text-align: center;
+	padding: 10px;
+	width: 95%;
+	min-height: 70vh;
+}
+footer{
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #455;
+	margin-top: 25px;
+	padding: 50px 200px;
+	letter-spacing: 3px;
+	text-align: center;
+	padding: 5px;
+}
+#timer{
+	color: red;
+}
+.cards{
+	width:60px; 
+	height:60px; 
+	margin:10px; 
+	padding:10px; 
+	border-radius:10px; 
+	border:1px solid #888; 
+	background-color: #EEE;
+}
