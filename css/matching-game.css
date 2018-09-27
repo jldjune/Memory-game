@@ -91,3 +91,7 @@ footer{
 	border:1px solid #888; 
 	background-color: #EEE;
 }
+#countDown{
+	color: red;
+	font-size: 2rem;
+}

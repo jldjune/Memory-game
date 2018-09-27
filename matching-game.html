@@ -11,15 +11,15 @@
 	<div id="container">
 		<header>
 				<h1>Memory Game</h1>
-				<select id="difficulty" onchange="selector()">
+				<select id="difficulty">
 					<option value="12">Choose Level</option>
 					<option value="12">Novice(12 pairs)</option>
 					<option value="18">Aficionado(18 pairs)</option>
 					<option value="25">Professional(25 pairs)</option>
 					<option value="30">Ninja(30 pairs)</option>
 				</select>
-				<button>PLAY</button>
-				<div id="msg-box">Message Box</div>
+				<button id="play-btn">PLAY</button>
+				<div id="msg-box"></div>
 		</header>
 		<div id="app"></div>
 		<footer>
@@ -34,9 +34,9 @@
 		</div>
 	<script src="js/memory-game.js"></script>
 	<script>
-//		const picsArr = ["anchor","apple","barn","baseball","basketball-player","boxer","car","cat","cowboy-boot","duck","eagle","golden-anchor","grapes","horse","house","jumping-horse","jumping","key","keys","lion","monster-truck","motorcycle","pocket-watch","scissors","seahorse","shoe","stopwatch","wagon-wheel","wheel","slamdunk"]
+		const picsArr = ["anchor","apple","barn","baseball","basketball-player","boxer","car","cat","cowboy-boot","duck","eagle","golden-anchor","grapes","horse","house","jumping-horse","jumping","key","keys","lion","monster-truck","motorcycle","pocket-watch","scissors","seahorse","shoe","stopwatch","wagon-wheel","wheel","slamdunk"]
 
-//		const memoryGame = new MemoryGame(app, picsArr)
+		const memoryGame = new MemoryGame('app', picsArr)
 	</script>
 </body>
 </html>
