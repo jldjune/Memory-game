@@ -73,7 +73,7 @@ footer{
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: #455;
-	margin-top: 25px;
+	margin-top: 15px;
 	padding: 50px 200px;
 	letter-spacing: 3px;
 	text-align: center;
@@ -94,4 +94,44 @@ footer{
 #countDown{
 	color: red;
 	font-size: 2rem;
+}
+#initials{
+	width: 60px;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	padding: 3px;
+}
+#high-score-box {
+	position: absolute;
+	width: 700px;
+	padding: 20px;
+	height: 500px;
+	font-size: 1.25rem;
+	color: #359;
+	font-weight: 700;
+	overflow-y: scroll;
+	top: 1000px; /* push it off screen til needed to display high scores */
+	left: 550px;
+	background-color:aquamarine;
+	border: 5px solid aqua;
+	box-shadow: 5px 5px 5px aqua;
+	border-radius: 15px;
+	z-index: 3;
+	display: none;
+}
+table {
+	background-color: white;
+	width: 100%;
+	border-radius: 25px;
+	/* border: 3px solid forestgreen; */
+}
+th {
+	background-color: forestgreen;
+	color: bisque;
+}
+tr:nth-child(odd){
+	background-color:#38d0c3;
+}
+tr:nth-child(even){
+	background-color:#1d8fe1;
 }

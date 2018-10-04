@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Memory Game</title>
+	<link rel="stylesheet" href="css/memory-game.css">
+</head>
+
+<body>
+	<div id="container">
+		<header>
+				<h1>Memory Game</h1>
+				<select id="difficulty">
+					<option value="12">Choose Level</option>
+					<option value="4">Testing (4 pairs)</option>
+					<option value="12">Novice (12 pairs)</option>
+					<option value="18">Pro (18 pairs)</option>
+					<option value="25">Master (25 pairs)</option>
+					<option value="30">Ninja (30 pairs)</option>
+				</select>
+				<button id="play-btn">PLAY</button>
+				<div id="msg-box"></div>
+		</header>
+		<div id="app"></div><!-- holds game pieces -->
+		<footer>
+			<span>
+				Attempts:&nbsp;<span id="attempt-box">0</span>&nbsp;
+				Matches:&nbsp;<span id="match-box">0</span>&nbsp;
+				Average:&nbsp;<span id="average-box">0</span>&nbsp;
+				Score:&nbsp;<span id="score-box">0</span>&nbsp;
+			</span>
+			<span id="timer">00:00</span>
+		</footer>
+	</div><!-- end container -->
+	<div id="high-score-box"></div> <!-- high score div -->
+	<script
+			src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+	</script>
+	<script src="js/memory-game.js"></script>
+	<script>
+		const picsArr = ["anchor","apple","barn","baseball","basketball-player","boxer","car","cat","cowboy-boot","duck","eagle","golden-anchor","grapes","horse","house","jumping-horse","jumping","key","keys","lion","monster-truck","motorcycle","pocket-watch","scissors","seahorse","shoe","stopwatch","wagon-wheel","wheel","slamdunk"]
+
+		const memoryGame = new MemoryGame('app', picsArr)
+	</script>
+</body>
+</html>
