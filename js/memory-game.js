@@ -230,12 +230,13 @@ class MemoryGame{
 		
 		// calculate score
 		this.score = Math.ceil((this.average * this.scale * this.matches * 1000) / this.totSec);
+		
 
 		// output score variables to score-box 
 		this.attemptBox.innerHTML = this.attempts;
 		this.matchBox.innerHTML = this.matches;
-		this.averageBox.innerHTML = this.average;
-		this.scoreBox.innerHTML = this.score;
+		this.averageBox.innerHTML = !this.average ? 0: this.average;
+		this.scoreBox.innerHTML = !this.score ? 0: this.score;
 
 		
 		
@@ -317,6 +318,7 @@ class MemoryGame{
 //		let xhr = new XMLHttpRequest();
 //		xhr.onload = () => {
 //			this.highScoreBox.innerHTML = xhr.responseText;
+			
 //		}
 //		
 //		xhr.open('GET', url, true);
@@ -337,7 +339,9 @@ class MemoryGame{
 			success: function(highScores){
 				$('#high-score-box').html(highScores)
 			}
-		})
+		})// end jQueery AJAX
+		
+		
 	}// end saveScore
 		
 } // end MemoryGame class 

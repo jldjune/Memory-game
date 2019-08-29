@@ -24,7 +24,7 @@ $query = "INSERT INTO scores(score, attempts, matches, seconds, level, initials)
 
 	// query to retrieve scores
 	$query2 = "SELECT * FROM scores 
-					WHERE matches < 10
+					WHERE matches > 10
 					ORDER BY score DESC
 					LIMIT 10";
 
@@ -49,6 +49,17 @@ $query = "INSERT INTO scores(score, attempts, matches, seconds, level, initials)
 	}
 
 	echo $tbl;
-
+	
+//	$highScores = array();
+//
+//	while($row=mysqli_fetch_array($result)){
+//		
+//		$row['dateTime'] = date('D. M. d, Y - H:i:s', strtotime($row['dateTime']));
+//		
+//		array_push($highScores, $row);
+//	}
+//
+//	// echo a JSON obj
+//	echo json_encode($highScores)
 
 ?>
